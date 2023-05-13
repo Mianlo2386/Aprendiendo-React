@@ -12,7 +12,7 @@ function ElementoLista(props){
 const RenderizadoElementos = () => {
 
     const [seasons, setSeasons]=useState(['Primavera','Verano','Otoño','Invierno'])
-    console.log(data)
+    //console.log(data)
 
   return (
     <div>

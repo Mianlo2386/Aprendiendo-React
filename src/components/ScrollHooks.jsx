@@ -5,18 +5,26 @@ const ScrollHooks = () => {
     const [name, setName] = useState('Miguel');
 
     useEffect(() => {
-        console.log('Moviendo el scroll')
+        //console.log('Moviendo el scroll')
         const detectarScroll = () => {
             setScrollY(window.pageYOffset)
             
         }
         window.addEventListener("scroll", detectarScroll)
+        return()=> window.removeEventListener('scroll', detectarScroll)
     },[scrollY])
+    
     useEffect(() => {
-        console.log('Fase de montaje')
+        //console.log('Fase de montaje')
     },[])
     useEffect(() => {
-        console.log('Fase de actualizacion')
+       // console.log('Fase de actualizacion')
+    })
+    useEffect(() => {
+        
+        return ()=> {
+            //console.log('Fase de desmontaje')
+        }
     })
 
   return (

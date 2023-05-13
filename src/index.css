@@ -18,8 +18,10 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+  border-radius: 5px;
 }
 a:hover {
+  border: 1px solid rgb(35, 8, 133);
   color: #535bf2;
 }
 
